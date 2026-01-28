@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sunkings Property Ltd | Real Estate & Property Management</title>
+    <title>Sankings Property Ltd | Real Estate & Property Management</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -19,37 +20,48 @@
         }
     </script>
     <style>
-        .property-card, .service-card {
+        .property-card,
+        .service-card {
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-        .property-card:hover, .service-card:hover {
+
+        .property-card:hover,
+        .service-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
         }
+
         .gallery-item {
             transition: all 0.3s ease;
         }
+
         .gallery-item:hover {
             transform: scale(1.03);
         }
+
         .floating-social {
             position: fixed;
             bottom: 20px;
             right: 20px;
             z-index: 1000;
         }
+
         .floating-social a {
             transition: all 0.3s ease;
         }
+
         .floating-social a:hover {
             transform: translateY(-3px);
         }
+
         .mobile-menu {
             transition: all 0.3s ease;
         }
+
         .nav-link {
             position: relative;
         }
+
         .nav-link::after {
             content: '';
             position: absolute;
@@ -60,25 +72,30 @@
             background-color: #1877f2;
             transition: width 0.3s ease;
         }
+
         .nav-link:hover::after {
             width: 100%;
         }
+
         .active-nav::after {
             width: 100%;
         }
     </style>
 </head>
+
 <body class="bg-gray-50 text-gray-800">
     <!-- Navigation -->
     <nav class="bg-white shadow-md sticky top-0 z-50">
         <div class="container mx-auto px-4 py-3 flex justify-between items-center">
             <div class="flex items-center">
                 <div class="w-10 h-10 bg-fb-blue rounded-lg flex items-center justify-center mr-3">
-                    <i class="fas fa-crown text-white text-xl"></i>
+                    <div class="flex items-center gap-2">
+                        <img src="logo.png" alt="Logo" class="h-6 w-auto">
+                    </div>
                 </div>
-                <a href="#home" class="text-2xl font-bold text-fb-blue">Sunkings Property Ltd</a>
+                <a href="#home" class="text-2xl font-bold text-fb-blue">Sankings Property Ltd</a>
             </div>
-            
+
             <!-- Desktop Navigation -->
             <div class="hidden md:flex space-x-8">
                 <a href="#home" class="nav-link active-nav font-medium text-fb-blue">Home</a>
@@ -88,19 +105,20 @@
                 <a href="#gallery" class="nav-link font-medium text-gray-700 hover:text-fb-blue">Gallery</a>
                 <a href="#contact" class="nav-link font-medium text-gray-700 hover:text-fb-blue">Contact</a>
             </div>
-            
+
             <!-- Mobile menu button -->
             <button id="mobile-menu-button" class="md:hidden text-gray-700">
                 <i class="fas fa-bars text-2xl"></i>
             </button>
         </div>
-        
+
         <!-- Mobile Navigation -->
         <div id="mobile-menu" class="mobile-menu hidden md:hidden bg-white px-4 pb-4">
             <a href="#home" class="block py-2 font-medium text-fb-blue border-b">Home</a>
             <a href="#about" class="block py-2 font-medium text-gray-700 hover:text-fb-blue border-b">About</a>
             <a href="#services" class="block py-2 font-medium text-gray-700 hover:text-fb-blue border-b">Services</a>
-            <a href="#properties" class="block py-2 font-medium text-gray-700 hover:text-fb-blue border-b">Properties</a>
+            <a href="#properties"
+                class="block py-2 font-medium text-gray-700 hover:text-fb-blue border-b">Properties</a>
             <a href="#gallery" class="block py-2 font-medium text-gray-700 hover:text-fb-blue border-b">Gallery</a>
             <a href="#contact" class="block py-2 font-medium text-gray-700 hover:text-fb-blue">Contact</a>
         </div>
@@ -110,23 +128,28 @@
     <section id="home" class="py-16 md:py-24 bg-gradient-to-r from-fb-blue to-blue-600 text-white">
         <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
             <div class="md:w-1/2 mb-10 md:mb-0">
-                <h1 class="text-4xl md:text-5xl font-bold mb-6">Find Your Dream Property with Sunkings</h1>
-                <p class="text-xl mb-8 opacity-90">Professional real estate, property management, and clearing & forwarding services in Kitengela and beyond.</p>
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">Find Your Dream Property with Sankings</h1>
+                <p class="text-xl mb-8 opacity-90">Professional real estate, property management, and clearing &
+                    forwarding services in Kitengela and beyond.</p>
                 <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-                    <a href="#properties" class="bg-white text-fb-blue font-bold py-3 px-6 rounded-lg text-center hover:bg-gray-100 transition duration-300">
+                    <a href="#properties"
+                        class="bg-white text-fb-blue font-bold py-3 px-6 rounded-lg text-center hover:bg-gray-100 transition duration-300">
                         <i class="fas fa-home mr-2"></i>View Properties
                     </a>
-                    <a href="#contact" class="bg-transparent border-2 border-white text-white font-bold py-3 px-6 rounded-lg text-center hover:bg-white hover:text-fb-blue transition duration-300">
+                    <a href="#contact"
+                        class="bg-transparent border-2 border-white text-white font-bold py-3 px-6 rounded-lg text-center hover:bg-white hover:text-fb-blue transition duration-300">
                         <i class="fas fa-phone-alt mr-2"></i>Contact Us
                     </a>
                 </div>
             </div>
             <div class="md:w-1/2">
                 <div class="bg-white rounded-xl shadow-2xl overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1073&q=80" alt="Modern Real Estate" class="w-full h-64 md:h-80 object-cover">
+                    <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1073&q=80"
+                        alt="Modern Real Estate" class="w-full h-64 md:h-80 object-cover">
                     <div class="p-6">
                         <h3 class="text-2xl font-bold text-gray-800 mb-2">Premium Properties</h3>
-                        <p class="text-gray-600">We offer a wide range of residential and commercial properties to suit your needs and budget.</p>
+                        <p class="text-gray-600">We offer a wide range of residential and commercial properties to suit
+                            your needs and budget.</p>
                     </div>
                 </div>
             </div>
@@ -136,31 +159,39 @@
     <!-- About Section -->
     <section id="about" class="py-16 bg-white">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">About Sunkings Property Ltd</h2>
-            
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">About Sankings Property Ltd</h2>
+
             <div class="flex flex-col md:flex-row items-center">
                 <div class="md:w-1/2 mb-10 md:mb-0">
-                    <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="About Us" class="rounded-xl shadow-lg w-full">
+                    <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                        alt="About Us" class="rounded-xl shadow-lg w-full">
                 </div>
                 <div class="md:w-1/2 md:pl-12">
                     <h3 class="text-2xl font-bold text-fb-blue mb-6">Your Trusted Real Estate Partner</h3>
-                    <p class="text-gray-700 mb-6">Sunkings Property Ltd is a professional company based in Kitengela, offering comprehensive real estate solutions including property agency, management, and clearing & forwarding services.</p>
-                    
+                    <p class="text-gray-700 mb-6">Sankings Property Ltd is a professional company based in Kitengela,
+                        offering comprehensive real estate solutions including property agency, management, and clearing
+                        & forwarding services.</p>
+
                     <div class="mb-8">
                         <h4 class="text-xl font-bold text-gray-800 mb-4">Our Mission</h4>
-                        <p class="text-gray-700">To provide exceptional real estate services through professionalism, integrity, and commitment to our clients' satisfaction.</p>
+                        <p class="text-gray-700">To provide exceptional real estate services through professionalism,
+                            integrity, and commitment to our clients' satisfaction.</p>
                     </div>
-                    
+
                     <div class="mb-8">
                         <h4 class="text-xl font-bold text-gray-800 mb-4">Our Vision</h4>
-                        <p class="text-gray-700">To become the leading real estate and property management company in the region, recognized for our reliability and excellent service.</p>
+                        <p class="text-gray-700">To become the leading real estate and property management company in
+                            the region, recognized for our reliability and excellent service.</p>
                     </div>
-                    
+
                     <div class="bg-gray-50 p-6 rounded-lg">
                         <h4 class="text-xl font-bold text-gray-800 mb-4">Our Location</h4>
-                        <p class="text-gray-700 mb-2"><i class="fas fa-map-marker-alt text-fb-blue mr-2"></i> Kitengela, opposite Kitengela Mall</p>
-                        <p class="text-gray-700 mb-2"><i class="fas fa-building text-fb-blue mr-2"></i> Inside Betty Business Center</p>
-                        <p class="text-gray-700"><i class="fas fa-door-open text-fb-blue mr-2"></i> 3rd Floor, Room 308</p>
+                        <p class="text-gray-700 mb-2"><i class="fas fa-map-marker-alt text-fb-blue mr-2"></i> Kitengela,
+                            opposite Kitengela Mall</p>
+                        <p class="text-gray-700 mb-2"><i class="fas fa-building text-fb-blue mr-2"></i> Inside Betty
+                            Business Center</p>
+                        <p class="text-gray-700"><i class="fas fa-door-open text-fb-blue mr-2"></i> 3rd Floor, Room 308
+                        </p>
                     </div>
                 </div>
             </div>
@@ -172,7 +203,7 @@
         <div class="container mx-auto px-4">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 text-gray-800">Our Services</h2>
             <p class="text-xl text-center text-gray-600 mb-12">Comprehensive property solutions for all your needs</p>
-            
+
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Service 1 -->
                 <div class="service-card bg-white rounded-xl shadow-lg p-8">
@@ -180,7 +211,8 @@
                         <i class="fas fa-home text-white text-2xl"></i>
                     </div>
                     <h3 class="text-2xl font-bold text-gray-800 mb-4">Real Estate Agency</h3>
-                    <p class="text-gray-700 mb-6">We help you buy, sell, and rent residential and commercial properties with expert guidance and market insights.</p>
+                    <p class="text-gray-700 mb-6">We help you buy, sell, and rent residential and commercial properties
+                        with expert guidance and market insights.</p>
                     <ul class="text-gray-700">
                         <li class="mb-2"><i class="fas fa-check text-green-500 mr-2"></i> Property valuation</li>
                         <li class="mb-2"><i class="fas fa-check text-green-500 mr-2"></i> Sales & purchases</li>
@@ -188,14 +220,15 @@
                         <li><i class="fas fa-check text-green-500 mr-2"></i> Market analysis</li>
                     </ul>
                 </div>
-                
+
                 <!-- Service 2 -->
                 <div class="service-card bg-white rounded-xl shadow-lg p-8">
                     <div class="w-16 h-16 bg-fb-blue rounded-full flex items-center justify-center mb-6">
                         <i class="fas fa-tasks text-white text-2xl"></i>
                     </div>
                     <h3 class="text-2xl font-bold text-gray-800 mb-4">Property Management</h3>
-                    <p class="text-gray-700 mb-6">We handle all aspects of property management, from tenant screening to maintenance and rent collection.</p>
+                    <p class="text-gray-700 mb-6">We handle all aspects of property management, from tenant screening to
+                        maintenance and rent collection.</p>
                     <ul class="text-gray-700">
                         <li class="mb-2"><i class="fas fa-check text-green-500 mr-2"></i> Tenant management</li>
                         <li class="mb-2"><i class="fas fa-check text-green-500 mr-2"></i> Maintenance coordination</li>
@@ -203,14 +236,15 @@
                         <li><i class="fas fa-check text-green-500 mr-2"></i> Property inspections</li>
                     </ul>
                 </div>
-                
+
                 <!-- Service 3 -->
                 <div class="service-card bg-white rounded-xl shadow-lg p-8">
                     <div class="w-16 h-16 bg-fb-blue rounded-full flex items-center justify-center mb-6">
                         <i class="fas fa-shipping-fast text-white text-2xl"></i>
                     </div>
                     <h3 class="text-2xl font-bold text-gray-800 mb-4">Clearing & Forwarding</h3>
-                    <p class="text-gray-700 mb-6">We provide efficient clearing and forwarding services for imports and exports, handling all documentation and logistics.</p>
+                    <p class="text-gray-700 mb-6">We provide efficient clearing and forwarding services for imports and
+                        exports, handling all documentation and logistics.</p>
                     <ul class="text-gray-700">
                         <li class="mb-2"><i class="fas fa-check text-green-500 mr-2"></i> Customs clearance</li>
                         <li class="mb-2"><i class="fas fa-check text-green-500 mr-2"></i> Logistics coordination</li>
@@ -227,15 +261,22 @@
         <div class="container mx-auto px-4">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 text-gray-800">Available Properties</h2>
             <p class="text-xl text-center text-gray-600 mb-12">Find your perfect property from our curated selection</p>
-            
+
             <!-- Property Filters -->
             <div class="flex flex-wrap justify-center mb-10">
-                <button class="property-filter active-filter bg-fb-blue text-white px-5 py-2 rounded-lg m-2 font-medium" data-filter="all">All Properties</button>
-                <button class="property-filter bg-gray-200 text-gray-800 px-5 py-2 rounded-lg m-2 font-medium hover:bg-gray-300" data-filter="residential">Residential</button>
-                <button class="property-filter bg-gray-200 text-gray-800 px-5 py-2 rounded-lg m-2 font-medium hover:bg-gray-300" data-filter="commercial">Commercial</button>
-                <button class="property-filter bg-gray-200 text-gray-800 px-5 py-2 rounded-lg m-2 font-medium hover:bg-gray-300" data-filter="land">Land</button>
+                <button class="property-filter active-filter bg-fb-blue text-white px-5 py-2 rounded-lg m-2 font-medium"
+                    data-filter="all">All Properties</button>
+                <button
+                    class="property-filter bg-gray-200 text-gray-800 px-5 py-2 rounded-lg m-2 font-medium hover:bg-gray-300"
+                    data-filter="residential">Residential</button>
+                <button
+                    class="property-filter bg-gray-200 text-gray-800 px-5 py-2 rounded-lg m-2 font-medium hover:bg-gray-300"
+                    data-filter="commercial">Commercial</button>
+                <button
+                    class="property-filter bg-gray-200 text-gray-800 px-5 py-2 rounded-lg m-2 font-medium hover:bg-gray-300"
+                    data-filter="land">Land</button>
             </div>
-            
+
             <!-- Property Listings (Dynamic) -->
             <div id="property-listings" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Properties will be dynamically loaded here -->
@@ -248,54 +289,62 @@
         <div class="container mx-auto px-4">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 text-gray-800">Property Gallery</h2>
             <p class="text-xl text-center text-gray-600 mb-12">Explore our portfolio of properties and projects</p>
-            
+
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                 <!-- Gallery images will be loaded dynamically from the same folder -->
                 <!-- These are placeholder images that would be replaced with actual images in the same folder as index.html -->
                 <div class="gallery-item overflow-hidden rounded-lg shadow-md">
-                    <img src="https://images.unsplash.com/photo-1518780664697-55e3ad937233?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Modern Apartment" class="w-full h-64 object-cover">
+                    <img src="https://images.unsplash.com/photo-1518780664697-55e3ad937233?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                        alt="Modern Apartment" class="w-full h-64 object-cover">
                     <div class="p-4 bg-white">
                         <p class="font-medium text-gray-800">Modern Apartment</p>
                     </div>
                 </div>
                 <div class="gallery-item overflow-hidden rounded-lg shadow-md">
-                    <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Luxury Villa" class="w-full h-64 object-cover">
+                    <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                        alt="Luxury Villa" class="w-full h-64 object-cover">
                     <div class="p-4 bg-white">
                         <p class="font-medium text-gray-800">Luxury Villa</p>
                     </div>
                 </div>
                 <div class="gallery-item overflow-hidden rounded-lg shadow-md">
-                    <img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Office Building" class="w-full h-64 object-cover">
+                    <img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                        alt="Office Building" class="w-full h-64 object-cover">
                     <div class="p-4 bg-white">
                         <p class="font-medium text-gray-800">Office Building</p>
                     </div>
                 </div>
                 <div class="gallery-item overflow-hidden rounded-lg shadow-md">
-                    <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Commercial Space" class="w-full h-64 object-cover">
+                    <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                        alt="Commercial Space" class="w-full h-64 object-cover">
                     <div class="p-4 bg-white">
                         <p class="font-medium text-gray-800">Commercial Space</p>
                     </div>
                 </div>
                 <div class="gallery-item overflow-hidden rounded-lg shadow-md">
-                    <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Residential House" class="w-full h-64 object-cover">
+                    <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                        alt="Residential House" class="w-full h-64 object-cover">
                     <div class="p-4 bg-white">
                         <p class="font-medium text-gray-800">Residential House</p>
                     </div>
                 </div>
                 <div class="gallery-item overflow-hidden rounded-lg shadow-md">
-                    <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Land Plot" class="w-full h-64 object-cover">
+                    <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                        alt="Land Plot" class="w-full h-64 object-cover">
                     <div class="p-4 bg-white">
                         <p class="font-medium text-gray-800">Land Plot</p>
                     </div>
                 </div>
                 <div class="gallery-item overflow-hidden rounded-lg shadow-md">
-                    <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Townhouse" class="w-full h-64 object-cover">
+                    <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                        alt="Townhouse" class="w-full h-64 object-cover">
                     <div class="p-4 bg-white">
                         <p class="font-medium text-gray-800">Townhouse</p>
                     </div>
                 </div>
                 <div class="gallery-item overflow-hidden rounded-lg shadow-md">
-                    <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Apartment Interior" class="w-full h-64 object-cover">
+                    <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                        alt="Apartment Interior" class="w-full h-64 object-cover">
                     <div class="p-4 bg-white">
                         <p class="font-medium text-gray-800">Apartment Interior</p>
                     </div>
@@ -309,48 +358,54 @@
         <div class="container mx-auto px-4">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 text-gray-800">Contact Us</h2>
             <p class="text-xl text-center text-gray-600 mb-12">Get in touch for all your property needs</p>
-            
+
             <div class="flex flex-col lg:flex-row">
                 <!-- Contact Form -->
                 <div class="lg:w-1/2 mb-12 lg:mb-0 lg:pr-8">
                     <div class="bg-gray-50 p-8 rounded-xl shadow-lg">
                         <h3 class="text-2xl font-bold text-gray-800 mb-6">Send us a Message</h3>
-                        
+
                         <form id="contact-form">
                             <div class="mb-6">
                                 <label for="name" class="block text-gray-700 font-medium mb-2">Full Name</label>
-                                <input type="text" id="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-fb-blue">
+                                <input type="text" id="name" required
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-fb-blue">
                             </div>
-                            
+
                             <div class="mb-6">
                                 <label for="phone" class="block text-gray-700 font-medium mb-2">Phone Number</label>
-                                <input type="tel" id="phone" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-fb-blue" placeholder="0723 264 444">
+                                <input type="tel" id="phone" required
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-fb-blue"
+                                    placeholder="0723 264 444">
                             </div>
-                            
+
                             <div class="mb-6">
                                 <label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
-                                <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-fb-blue">
+                                <input type="email" id="email"
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-fb-blue">
                             </div>
-                            
+
                             <div class="mb-6">
                                 <label for="message" class="block text-gray-700 font-medium mb-2">Your Message</label>
-                                <textarea id="message" rows="5" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-fb-blue"></textarea>
+                                <textarea id="message" rows="5" required
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-fb-blue"></textarea>
                             </div>
-                            
-                            <button type="submit" class="w-full bg-fb-blue hover:bg-fb-blue-dark text-white font-bold py-3 px-6 rounded-lg transition duration-300">
+
+                            <button type="submit"
+                                class="w-full bg-fb-blue hover:bg-fb-blue-dark text-white font-bold py-3 px-6 rounded-lg transition duration-300">
                                 <i class="fas fa-paper-plane mr-2"></i>Send Message
                             </button>
                         </form>
-                        
+
                         <div id="form-message" class="mt-6 text-center hidden"></div>
                     </div>
                 </div>
-                
+
                 <!-- Contact Info & Map -->
                 <div class="lg:w-1/2 lg:pl-8">
                     <div class="mb-8">
                         <h3 class="text-2xl font-bold text-gray-800 mb-6">Contact Information</h3>
-                        
+
                         <div class="space-y-6">
                             <div class="flex items-start">
                                 <div class="w-12 h-12 bg-fb-blue rounded-full flex items-center justify-center mr-4">
@@ -363,7 +418,7 @@
                                     <p class="text-gray-700">3rd Floor, Room 308</p>
                                 </div>
                             </div>
-                            
+
                             <div class="flex items-start">
                                 <div class="w-12 h-12 bg-fb-blue rounded-full flex items-center justify-center mr-4">
                                     <i class="fas fa-phone-alt text-white text-xl"></i>
@@ -374,7 +429,7 @@
                                     <p class="text-gray-600">Call or WhatsApp for inquiries</p>
                                 </div>
                             </div>
-                            
+
                             <div class="flex items-start">
                                 <div class="w-12 h-12 bg-fb-blue rounded-full flex items-center justify-center mr-4">
                                     <i class="fas fa-clock text-white text-xl"></i>
@@ -388,11 +443,12 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <!-- Map -->
                     <div class="bg-gray-200 rounded-xl overflow-hidden shadow-lg h-64">
                         <!-- In a real implementation, you would embed a Google Map here -->
-                        <div class="w-full h-full flex items-center justify-center bg-gradient-to-r from-blue-100 to-blue-200">
+                        <div
+                            class="w-full h-full flex items-center justify-center bg-gradient-to-r from-blue-100 to-blue-200">
                             <div class="text-center">
                                 <i class="fas fa-map-marked-alt text-4xl text-fb-blue mb-4"></i>
                                 <p class="text-gray-700 font-medium">Kitengela Location Map</p>
@@ -414,11 +470,12 @@
                         <div class="w-10 h-10 bg-fb-blue rounded-lg flex items-center justify-center mr-3">
                             <i class="fas fa-crown text-white text-xl"></i>
                         </div>
-                        <h3 class="text-2xl font-bold">Sunkings Property Ltd</h3>
+                        <h3 class="text-2xl font-bold">Sankings Property Ltd</h3>
                     </div>
-                    <p class="text-gray-300">Professional real estate, property management, and clearing & forwarding services.</p>
+                    <p class="text-gray-300">Professional real estate, property management, and clearing & forwarding
+                        services.</p>
                 </div>
-                
+
                 <div class="text-center md:text-right">
                     <h4 class="text-xl font-bold mb-4">Quick Links</h4>
                     <div class="flex flex-col space-y-2">
@@ -430,10 +487,11 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="border-t border-gray-700 mt-10 pt-8 text-center text-gray-400">
-                <p>&copy; <span id="current-year">2023</span> Sunkings Property Ltd. All rights reserved.</p>
-                <p class="mt-2">Kitengela, opposite Kitengela Mall, Inside Betty Business Center, 3rd Floor, Room 308</p>
+                <p>&copy; <span id="current-year">2023</span> Sankings Property Ltd. All rights reserved.</p>
+                <p class="mt-2">Kitengela, opposite Kitengela Mall, Inside Betty Business Center, 3rd Floor, Room 308
+                </p>
                 <p class="mt-1">Phone: 0723 264 444 | WhatsApp: 0723 264 444</p>
             </div>
         </div>
@@ -442,13 +500,15 @@
     <!-- Floating Social Media Icons -->
     <div class="floating-social">
         <div class="flex flex-col space-y-4">
-            <a href="https://wa.me/254723264444?text=Hello%20Sunkings%20Property%20Ltd,%20I%20have%20an%20inquiry" target="_blank" class="w-14 h-14 bg-green-500 rounded-full flex items-center justify-center shadow-lg">
+            <a href="https://wa.me/254723264444?text=Hello%20Sankings%20Property%20Ltd,%20I%20have%20an%20inquiry"
+                target="_blank" class="w-14 h-14 bg-green-500 rounded-full flex items-center justify-center shadow-lg">
                 <i class="fab fa-whatsapp text-white text-2xl"></i>
             </a>
             <a href="#" class="w-14 h-14 bg-fb-blue rounded-full flex items-center justify-center shadow-lg">
                 <i class="fab fa-facebook-f text-white text-2xl"></i>
             </a>
-            <a href="tel:0723264444" class="w-14 h-14 bg-teal-500 rounded-full flex items-center justify-center shadow-lg">
+            <a href="tel:0723264444"
+                class="w-14 h-14 bg-teal-500 rounded-full flex items-center justify-center shadow-lg">
                 <i class="fas fa-phone-alt text-white text-2xl"></i>
             </a>
         </div>
@@ -457,14 +517,14 @@
     <!-- JavaScript for Dynamic Functionality -->
     <script>
         // Mobile menu toggle
-        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+        document.getElementById('mobile-menu-button').addEventListener('click', function () {
             const mobileMenu = document.getElementById('mobile-menu');
             mobileMenu.classList.toggle('hidden');
         });
-        
+
         // Update current year in footer
         document.getElementById('current-year').textContent = new Date().getFullYear();
-        
+
         // Property data - in a real implementation, this could come from a database or API
         const properties = [
             {
@@ -522,20 +582,20 @@
                 description: "Beautiful townhouse with garden and parking for two cars."
             }
         ];
-        
+
         // Function to render properties
         function renderProperties(filter = 'all') {
             const propertyListings = document.getElementById('property-listings');
             propertyListings.innerHTML = '';
-            
-            const filteredProperties = filter === 'all' 
-                ? properties 
+
+            const filteredProperties = filter === 'all'
+                ? properties
                 : properties.filter(property => property.type === filter);
-            
+
             filteredProperties.forEach(property => {
                 const propertyCard = document.createElement('div');
                 propertyCard.className = 'property-card bg-white rounded-xl shadow-lg overflow-hidden';
-                
+
                 propertyCard.innerHTML = `
                     <div class="relative">
                         <img src="${property.image}" alt="${property.title}" class="w-full h-56 object-cover">
@@ -559,35 +619,35 @@
                         </button>
                     </div>
                 `;
-                
+
                 propertyListings.appendChild(propertyCard);
             });
         }
-        
+
         // Initialize properties
         renderProperties();
-        
+
         // Property filter functionality
         document.querySelectorAll('.property-filter').forEach(button => {
-            button.addEventListener('click', function() {
+            button.addEventListener('click', function () {
                 // Remove active class from all buttons
                 document.querySelectorAll('.property-filter').forEach(btn => {
                     btn.classList.remove('active-filter', 'bg-fb-blue', 'text-white');
                     btn.classList.add('bg-gray-200', 'text-gray-800');
                 });
-                
+
                 // Add active class to clicked button
                 this.classList.remove('bg-gray-200', 'text-gray-800');
                 this.classList.add('active-filter', 'bg-fb-blue', 'text-white');
-                
+
                 // Filter properties
                 const filter = this.getAttribute('data-filter');
                 renderProperties(filter);
             });
         });
-        
+
         // Property inquiry function
-        window.inquiryProperty = function(propertyId) {
+        window.inquiryProperty = function (propertyId) {
             const property = properties.find(p => p.id === propertyId);
             if (property) {
                 // In a real implementation, this would open a modal or redirect to a contact form
@@ -596,17 +656,17 @@
                 document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
             }
         };
-        
+
         // Contact form submission
-        document.getElementById('contact-form').addEventListener('submit', function(e) {
+        document.getElementById('contact-form').addEventListener('submit', function (e) {
             e.preventDefault();
-            
+
             // Get form values
             const name = document.getElementById('name').value;
             const phone = document.getElementById('phone').value;
             const email = document.getElementById('email').value;
             const message = document.getElementById('message').value;
-            
+
             // In a real implementation, you would send this data to a server
             // For demo purposes, we'll just show a success message
             const formMessage = document.getElementById('form-message');
@@ -617,27 +677,27 @@
                 </div>
             `;
             formMessage.classList.remove('hidden');
-            
+
             // Reset form
             document.getElementById('contact-form').reset();
-            
+
             // Scroll to message
             formMessage.scrollIntoView({ behavior: 'smooth' });
-            
+
             // Hide message after 10 seconds
             setTimeout(() => {
                 formMessage.classList.add('hidden');
             }, 10000);
         });
-        
+
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
+            anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-                
+
                 const targetId = this.getAttribute('href');
                 if (targetId === '#') return;
-                
+
                 const targetElement = document.querySelector(targetId);
                 if (targetElement) {
                     // Update active navigation
@@ -645,16 +705,16 @@
                         link.classList.remove('active-nav', 'text-fb-blue');
                         link.classList.add('text-gray-700');
                     });
-                    
+
                     this.classList.add('active-nav', 'text-fb-blue');
                     this.classList.remove('text-gray-700');
-                    
+
                     // Scroll to target
                     window.scrollTo({
                         top: targetElement.offsetTop - 80,
                         behavior: 'smooth'
                     });
-                    
+
                     // Close mobile menu if open
                     const mobileMenu = document.getElementById('mobile-menu');
                     if (!mobileMenu.classList.contains('hidden')) {
@@ -663,14 +723,14 @@
                 }
             });
         });
-        
+
         // Set active nav based on scroll position
-        window.addEventListener('scroll', function() {
+        window.addEventListener('scroll', function () {
             const sections = document.querySelectorAll('section');
             const navLinks = document.querySelectorAll('.nav-link');
-            
+
             let current = '';
-            
+
             sections.forEach(section => {
                 const sectionTop = section.offsetTop;
                 const sectionHeight = section.clientHeight;
@@ -678,7 +738,7 @@
                     current = section.getAttribute('id');
                 }
             });
-            
+
             navLinks.forEach(link => {
                 link.classList.remove('active-nav', 'text-fb-blue');
                 link.classList.add('text-gray-700');
@@ -690,4 +750,5 @@
         });
     </script>
 </body>
+
 </html>
