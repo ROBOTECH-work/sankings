@@ -1,0 +1,8 @@
+//properties of the land 
+
+Land {
+    Location 
+    Size
+    Msg Ready Title Deeds
+}
+
