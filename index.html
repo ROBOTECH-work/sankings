@@ -201,6 +201,35 @@
         </div>
     </section>
 
+    
+    <!-- Properties Section -->
+    <section id="properties" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 text-gray-800">Available Properties</h2>
+            <p class="text-xl text-center text-gray-600 mb-12">Find your perfect property from our curated selection</p>
+
+            <!-- Property Filters -->
+            <div class="flex flex-wrap justify-center mb-10">
+                <button class="property-filter active-filter bg-fb-blue text-white px-5 py-2 rounded-lg m-2 font-medium"
+                    data-filter="all">All Properties</button>
+                <button
+                    class="property-filter bg-gray-200 text-gray-800 px-5 py-2 rounded-lg m-2 font-medium hover:bg-gray-300"
+                    data-filter="residential">Residential</button>
+                <button
+                    class="property-filter bg-gray-200 text-gray-800 px-5 py-2 rounded-lg m-2 font-medium hover:bg-gray-300"
+                    data-filter="commercial">Commercial</button>
+                <button
+                    class="property-filter bg-gray-200 text-gray-800 px-5 py-2 rounded-lg m-2 font-medium hover:bg-gray-300"
+                    data-filter="land">Land</button>
+            </div>
+
+            <!-- Property Listings (Dynamic) -->
+            <div id="property-listings" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Properties will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
     <!-- Services Section -->
     <section id="services" class="py-16 bg-gray-50">
         <div class="container mx-auto px-4">
@@ -259,33 +288,6 @@
         </div>
     </section>
 
-    <!-- Properties Section -->
-    <section id="properties" class="py-16 bg-white">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 text-gray-800">Available Properties</h2>
-            <p class="text-xl text-center text-gray-600 mb-12">Find your perfect property from our curated selection</p>
-
-            <!-- Property Filters -->
-            <div class="flex flex-wrap justify-center mb-10">
-                <button class="property-filter active-filter bg-fb-blue text-white px-5 py-2 rounded-lg m-2 font-medium"
-                    data-filter="all">All Properties</button>
-                <button
-                    class="property-filter bg-gray-200 text-gray-800 px-5 py-2 rounded-lg m-2 font-medium hover:bg-gray-300"
-                    data-filter="residential">Residential</button>
-                <button
-                    class="property-filter bg-gray-200 text-gray-800 px-5 py-2 rounded-lg m-2 font-medium hover:bg-gray-300"
-                    data-filter="commercial">Commercial</button>
-                <button
-                    class="property-filter bg-gray-200 text-gray-800 px-5 py-2 rounded-lg m-2 font-medium hover:bg-gray-300"
-                    data-filter="land">Land</button>
-            </div>
-
-            <!-- Property Listings (Dynamic) -->
-            <div id="property-listings" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Properties will be dynamically loaded here -->
-            </div>
-        </div>
-    </section>
 
     <!-- Gallery Section -->
     <section id="gallery" class="py-16 bg-gray-50">
